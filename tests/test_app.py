@@ -20,7 +20,7 @@ def test_main_get(client):
     response = client.get('/')
     assert response.status_code == 200
     assert b"Input text" in response.data
-    assert b"Find NERs" in response.data
+    assert b"Find named entities" in response.data
 
 def test_main_post(client):
     response = client.post('/', data={'sequence': 'John Smith lives in New York'})

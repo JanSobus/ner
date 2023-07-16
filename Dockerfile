@@ -28,5 +28,5 @@ RUN python3 modules/ner_inference.py
 
 #run the server with the app
 EXPOSE 5000
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:create_app()"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000","-t","0","app:create_app()"]
 

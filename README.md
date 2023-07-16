@@ -7,7 +7,7 @@ This a simple application showcasing [Named Entity Recognition](https://en.wikip
 This is the easiest way to run the app:
 
 1. Clone the repository
-2. Navigate to the root directory of the repository and run `docker compose up`
+2. Navigate to the root directory of the repository and run `docker compose up` (when first building image, it may take a while - model needs to be downloaded)
 3. Open your browser and navigate to `http://localhost:5000/`
 
 ### Running the application without Docker
@@ -30,4 +30,5 @@ The application will return the text with named entities highlighted in colors a
 ## Future improvements
 * Separate the front-end and back-end into separate services
 * Add more models (and let user choose the model to use in the app)
+* Cache models better (downloading it during build is annoying)
 * Experiment with different tokenizers and aggregation strategies
