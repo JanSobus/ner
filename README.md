@@ -15,8 +15,9 @@ If you don't want to use Docker, you can run the application manually:
 
 1. Clone the repository
 2. Import conda environment from yml file: `conda env create -f environment.yml --name <env_name>`
-3. Run the application: `python app.py`. (Docker version uses `gunicorn` WSGI to run the app)
-4. Open your browser and navigate to `http://localhost:5000/`
+3. Activate the environment: `conda activate <env_name>`
+4. Run the application: `python app.py`. (Docker version uses `gunicorn` WSGI to run the app)
+5. Open your browser and navigate to `http://localhost:5000/`
 
 #### Running the tests
 To run the tests, run `pytest` in the root directory of the repository once you have environment ready.
