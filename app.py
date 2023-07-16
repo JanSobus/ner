@@ -8,7 +8,7 @@ from wtforms import TextAreaField, SubmitField
 
 class NERForm(FlaskForm):
     sequence = TextAreaField('Input text', validators = [DataRequired()])
-    submit = SubmitField('Find NERs')
+    submit = SubmitField('Find named entities')
 
 def create_app():
     SECRET_KEY = os.urandom(32)
